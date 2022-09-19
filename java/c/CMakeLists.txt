@@ -48,5 +48,10 @@ add_library(arrow_cdata_jni SHARED ${SOURCES})
 target_link_libraries(arrow_cdata_jni ${JAVA_JVM_LIBRARY})
 add_dependencies(arrow_cdata_jni ${PROJECT_NAME})
 
-install(TARGETS arrow_cdata_jni 
-        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+echo "tony test"
+echo ${CMAKE_INSTALL_LIBDIR}
+
+install(
+  TARGETS arrow_cdata_jni
+  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
