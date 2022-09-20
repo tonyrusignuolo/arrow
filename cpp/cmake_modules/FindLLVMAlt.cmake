@@ -105,6 +105,8 @@ endif()
 
 mark_as_advanced(CLANG_EXECUTABLE LLVM_LINK_EXECUTABLE)
 
+message(STATUS "tony ${LLVM_DIR})
+
 find_package_handle_standard_args(
   LLVMAlt
   REQUIRED_VARS # The first variable is used for display.
