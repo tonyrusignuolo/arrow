@@ -21,6 +21,7 @@
 
 message(STATUS "FindLLVMAlt.cmake --> LLVM_DIR: ${LLVM_DIR}")
 message(STATUS "FindLLVMAlt.cmake --> LLVM_ROOT: ${LLVM_ROOT}")
+message(STATUS "FindLLVMAlt.cmake --> ARROW_LLVM_VERSIONS: ${ARROW_LLVM_VERSIONS}")
 
 if(LLVMAlt_FOUND)
   return()
