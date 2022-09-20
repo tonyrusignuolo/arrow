@@ -19,6 +19,9 @@
 #
 #  find_package(LLVMAlt)
 
+message(STATUS "FindLLVMAlt.cmake --> LLVM_DIR: ${LLVM_DIR}")
+message(STATUS "FindLLVMAlt.cmake --> LLVM_ROOT: ${LLVM_ROOT}")
+
 if(LLVMAlt_FOUND)
   return()
 endif()
@@ -104,8 +107,6 @@ if(LLVM_FOUND)
 endif()
 
 mark_as_advanced(CLANG_EXECUTABLE LLVM_LINK_EXECUTABLE)
-
-message(STATUS "tony ${LLVM_DIR}")
 
 find_package_handle_standard_args(
   LLVMAlt
